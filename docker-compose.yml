@@ -1,0 +1,13 @@
+services:
+  n8n:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "${N8N_PORT:-5678}:${N8N_PORT:-5678}"
+    env_file:
+      - .env
+    volumes:
+      - n8n_data:/home/node/.n8n
+
+volumes:
+  n8n_data:
