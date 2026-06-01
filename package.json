@@ -1,17 +1,22 @@
 {
   "name": "n8n-self-hosted",
   "version": "1.0.0",
-  "description": "Self-hosted n8n workflow automation — deploy anywhere for free",
+  "description": "Self-hosted n8n workflow automation \u2014 deploy anywhere for free",
   "main": "index.js",
   "scripts": {
-    "start": "N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=true n8n",
-    "dev": "N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=true n8n",
+    "start": "node api.js && N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=true n8n",
+    "dev": "node api.js && N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=true n8n",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
     "node": ">=20.19.0"
   },
-  "keywords": ["n8n", "workflow-automation", "self-hosted", "docker"],
+  "keywords": [
+    "n8n",
+    "workflow-automation",
+    "self-hosted",
+    "docker"
+  ],
   "author": "mrizwanashiq <mrizwanashiq@outlook.com> (https://github.com/mrizwanashiq)",
   "license": "MIT",
   "repository": {
